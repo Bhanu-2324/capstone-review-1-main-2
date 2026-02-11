@@ -1,0 +1,501 @@
+UserID,Age,AgeGroup,Gender,DailyScreenTime(hours),AI_Usage_Time(hours/day),Primary_AI_Use,Reliance_On_AI_For_Learning,Problems_Solved_Before_AI,Problems_Solved_With_AI,SleepHours,PhysicalActivity(hours),StressLevel,ProductivityScore
+1,21,18-25,Male,6.5,3.2,Learning,Low,3,25,7.0,1.4,Medium,91
+2,27,26-35,Female,5.8,1.5,Research,Medium,3,23,7.4,0.3,Medium,84
+3,19,26-35,Female,4.2,3.6,Content Creation,Low,5,25,7.0,1.7,Medium,95
+4,34,26-35,Male,7.2,2.3,Learning,Low,10,15,7.8,0.1,Medium,83
+5,33,26-35,Male,6.4,1.8,Coding,High,4,19,7.6,0.3,Medium,84
+6,27,26-35,Male,4.8,3.4,Coding,Medium,9,27,6.8,1.2,Medium,95
+7,29,36-45,Male,2.3,3.4,Problem Solving,Low,10,14,5.7,1.8,Low,95
+8,18,36-45,Male,3.2,2.2,Content Creation,Low,7,18,5.2,1.0,Low,92
+9,33,26-35,Male,3.1,4.0,Research,High,4,22,5.2,1.5,Low,95
+10,30,36-45,Female,6.9,3.2,Learning,Low,4,11,6.7,0.9,Medium,88
+11,23,26-35,Female,2.8,1.6,Content Creation,High,3,16,6.8,0.7,Low,93
+12,19,36-45,Male,5.1,1.0,Problem Solving,Low,9,16,6.5,0.1,Medium,82
+13,33,26-35,Male,2.3,0.7,Learning,Medium,3,24,6.9,1.0,Low,92
+14,26,26-35,Female,4.7,2.1,Learning,High,6,13,7.4,0.3,Medium,90
+15,24,26-35,Male,4.5,2.7,Coding,Low,8,20,5.9,1.2,Medium,92
+16,30,18-25,Female,3.6,1.8,Problem Solving,Low,9,22,7.6,1.1,Low,94
+17,27,26-35,Male,6.3,2.8,Coding,Medium,10,19,6.2,1.0,Medium,87
+18,25,26-35,Male,2.5,2.2,Content Creation,Medium,5,17,6.6,0.6,Low,95
+19,33,26-35,Female,2.7,1.9,Coding,Low,10,11,5.9,1.7,Low,95
+20,34,26-35,Male,5.5,1.0,Learning,Low,8,20,8.0,1.3,Medium,87
+21,35,18-25,Female,7.8,3.3,Learning,High,4,11,7.2,0.6,Medium,86
+22,29,26-35,Female,4.0,1.6,Coding,Low,10,26,7.8,0.9,Low,92
+23,19,18-25,Male,3.4,1.9,Coding,High,10,12,7.5,1.2,Low,95
+24,22,36-45,Female,3.3,0.7,Problem Solving,Medium,5,20,7.2,1.3,Low,91
+25,23,18-25,Female,2.1,0.8,Coding,Medium,4,28,5.1,1.4,Low,91
+26,24,26-35,Female,2.1,1.7,Research,Medium,10,23,5.0,1.1,Low,93
+27,20,36-45,Male,5.0,3.6,Learning,High,10,25,5.7,2.0,Medium,95
+28,21,26-35,Male,7.4,2.1,Learning,Medium,4,19,6.5,1.1,Medium,82
+29,20,18-25,Male,6.9,3.2,Learning,High,9,23,6.9,0.6,Medium,87
+30,32,36-45,Female,2.3,1.8,Content Creation,Medium,5,18,5.9,1.5,Low,95
+31,22,26-35,Female,2.2,1.9,Problem Solving,High,9,20,6.3,0.5,Low,95
+32,33,36-45,Male,7.9,2.9,Learning,Medium,3,13,7.1,1.2,Medium,85
+33,33,18-25,Female,5.2,3.4,Learning,High,6,21,7.3,0.7,Medium,94
+34,20,26-35,Male,5.3,2.8,Problem Solving,Medium,5,22,5.1,0.1,Medium,85
+35,32,18-25,Female,3.0,3.6,Learning,High,5,25,5.5,1.0,Low,95
+36,23,18-25,Male,7.6,2.3,Content Creation,High,8,17,7.3,0.8,Medium,83
+37,29,26-35,Female,5.1,3.3,Coding,Low,4,24,7.6,0.5,Medium,94
+38,19,36-45,Male,4.6,0.9,Learning,Low,6,13,6.7,1.5,Medium,87
+39,21,18-25,Male,3.8,3.4,Research,Low,10,22,7.0,1.1,Low,95
+40,22,36-45,Male,5.8,3.6,Content Creation,Medium,3,24,5.3,1.9,Medium,93
+41,26,26-35,Male,5.0,1.8,Coding,Medium,4,22,6.6,1.8,Medium,90
+42,26,26-35,Male,6.8,2.1,Research,Medium,8,14,5.0,0.3,High,78
+43,24,26-35,Female,4.6,3.4,Learning,Medium,4,26,6.7,1.0,Medium,95
+44,28,26-35,Male,4.2,3.6,Problem Solving,High,7,27,5.1,0.8,Medium,94
+45,22,36-45,Male,3.8,2.8,Content Creation,Medium,4,13,6.4,0.8,Low,95
+46,26,36-45,Male,7.4,0.6,Research,Medium,4,20,6.3,0.6,Medium,74
+47,25,26-35,Male,3.4,2.6,Problem Solving,High,10,28,7.6,0.3,Low,95
+48,25,18-25,Male,6.9,0.9,Problem Solving,Low,3,14,7.3,1.0,Medium,80
+49,26,18-25,Female,7.1,2.0,Research,High,8,17,5.2,0.3,High,78
+50,27,26-35,Male,6.6,0.5,Research,Low,9,29,6.2,1.0,Medium,77
+51,26,36-45,Female,7.1,1.2,Research,Low,4,30,7.6,1.7,Medium,83
+52,35,36-45,Male,4.9,2.4,Problem Solving,High,7,16,6.9,0.5,Medium,90
+53,20,18-25,Female,2.8,2.2,Coding,Low,9,14,5.9,0.1,Low,92
+54,32,18-25,Male,8.0,1.7,Learning,Low,9,30,6.4,1.1,Medium,78
+55,27,36-45,Male,4.3,2.3,Research,High,7,27,6.9,0.2,Medium,90
+56,35,36-45,Male,2.6,1.7,Content Creation,Low,3,30,5.3,0.8,Low,92
+57,19,26-35,Male,3.9,1.6,Research,Medium,6,24,6.9,0.8,Low,90
+58,31,18-25,Male,7.0,1.4,Coding,Medium,6,10,5.8,0.7,High,78
+59,25,18-25,Female,2.5,2.2,Learning,High,3,28,6.4,0.1,Low,94
+60,34,36-45,Male,5.6,1.7,Content Creation,Low,7,27,7.2,1.0,Medium,87
+61,19,18-25,Female,7.2,1.0,Problem Solving,High,9,17,5.2,1.3,High,76
+62,29,36-45,Female,6.3,2.8,Research,Medium,3,10,7.8,1.4,Medium,92
+63,24,26-35,Female,6.2,0.5,Research,High,8,28,6.9,0.1,Medium,77
+64,32,18-25,Female,7.8,2.4,Problem Solving,Medium,6,19,7.6,0.5,Medium,82
+65,23,18-25,Male,5.9,0.7,Learning,High,9,14,5.2,0.8,Medium,77
+66,26,26-35,Male,2.4,1.1,Learning,High,4,19,7.3,0.3,Low,92
+67,24,18-25,Female,4.2,1.5,Research,High,6,16,5.4,0.7,Medium,86
+68,21,36-45,Female,4.6,1.7,Content Creation,High,9,13,7.5,0.8,Medium,90
+69,22,18-25,Male,2.9,3.7,Content Creation,Low,3,17,6.5,0.1,Low,95
+70,30,26-35,Female,2.5,2.3,Learning,Medium,7,18,7.1,0.3,Low,95
+71,26,18-25,Female,6.1,1.6,Coding,Low,10,14,5.1,0.2,High,78
+72,26,36-45,Male,5.3,2.8,Problem Solving,Medium,3,30,6.5,1.0,Medium,91
+73,31,18-25,Male,3.6,1.7,Learning,Low,9,22,6.7,1.8,Low,94
+74,27,36-45,Male,5.9,3.7,Problem Solving,Medium,10,24,6.3,0.9,Medium,92
+75,31,18-25,Male,6.8,2.3,Coding,Medium,9,26,6.1,0.5,Medium,82
+76,28,26-35,Female,2.6,1.7,Problem Solving,High,8,17,6.6,1.4,Low,95
+77,19,36-45,Male,7.1,2.4,Coding,Low,4,16,6.5,1.7,Medium,86
+78,30,18-25,Male,3.7,3.4,Research,Low,7,26,6.4,1.9,Low,95
+79,26,18-25,Male,7.1,3.9,Problem Solving,Low,4,25,6.6,0.9,Medium,90
+80,27,36-45,Female,4.0,1.7,Learning,Low,4,30,7.2,2.0,Low,95
+81,19,18-25,Male,2.7,3.2,Coding,High,8,22,5.3,1.3,Low,95
+82,31,18-25,Female,4.2,1.2,Coding,Medium,8,11,7.1,1.7,Medium,91
+83,19,26-35,Female,4.6,3.2,Research,Low,8,20,5.7,1.5,Medium,94
+84,31,36-45,Male,3.1,2.9,Coding,High,3,18,6.7,0.5,Low,95
+85,27,26-35,Male,2.8,2.7,Coding,Low,5,27,7.3,1.5,Low,95
+86,25,26-35,Female,5.7,1.0,Research,Low,8,17,7.0,1.1,Medium,84
+87,29,18-25,Male,3.7,0.9,Research,Medium,4,10,5.0,1.8,Low,87
+88,35,18-25,Female,2.2,2.9,Content Creation,Low,9,17,6.0,0.7,Low,95
+89,27,18-25,Female,2.0,1.6,Problem Solving,Low,5,25,6.5,1.7,Low,95
+90,19,36-45,Male,7.1,3.8,Learning,Low,9,19,6.4,1.6,Medium,91
+91,20,18-25,Female,7.8,3.5,Content Creation,Medium,3,24,6.2,0.1,Medium,83
+92,31,36-45,Female,3.6,1.6,Coding,Low,3,24,5.6,0.5,Low,88
+93,27,36-45,Male,5.9,1.4,Learning,High,6,30,5.4,1.0,Medium,81
+94,30,26-35,Male,2.4,2.8,Problem Solving,Low,7,11,7.3,0.4,Low,95
+95,31,18-25,Male,6.3,2.5,Coding,High,10,16,5.3,1.6,High,86
+96,23,18-25,Male,3.4,3.1,Research,Low,8,23,5.3,0.8,Low,95
+97,21,18-25,Female,4.2,2.4,Content Creation,Medium,7,10,7.4,1.6,Medium,95
+98,26,26-35,Female,4.3,2.0,Research,Low,6,17,7.3,0.8,Medium,92
+99,20,26-35,Female,6.4,1.2,Research,Medium,5,16,5.5,1.6,High,81
+100,33,36-45,Male,2.8,1.0,Coding,Medium,10,22,5.1,0.9,Low,88
+101,21,26-35,Male,6.6,1.4,Content Creation,Low,8,20,7.6,0.8,Medium,83
+102,31,36-45,Female,3.3,3.7,Problem Solving,Medium,8,12,7.0,1.4,Low,95
+103,21,26-35,Female,2.5,1.2,Research,Medium,8,30,7.4,0.7,Low,94
+104,32,18-25,Male,7.4,1.9,Coding,Low,7,19,8.0,1.2,Medium,84
+105,27,36-45,Female,7.1,3.3,Content Creation,Medium,10,29,5.3,1.6,High,87
+106,24,26-35,Male,5.1,2.5,Research,High,3,18,5.6,1.7,Medium,91
+107,35,18-25,Female,4.3,1.1,Coding,Low,9,23,7.1,1.3,Medium,89
+108,23,26-35,Male,2.6,3.3,Coding,High,10,12,6.5,0.3,Low,95
+109,21,26-35,Male,5.8,1.9,Problem Solving,Low,5,25,6.7,1.0,Medium,86
+110,23,26-35,Female,4.0,1.7,Coding,High,8,12,7.6,0.7,Low,92
+111,23,18-25,Female,3.0,1.8,Research,Medium,7,21,7.6,1.0,Low,95
+112,23,18-25,Female,7.0,1.7,Learning,High,7,24,6.0,0.3,Medium,78
+113,21,26-35,Male,4.1,1.0,Research,Medium,9,19,7.8,1.8,Medium,92
+114,29,26-35,Female,2.7,1.0,Research,Low,4,26,7.7,1.0,Low,94
+115,22,26-35,Female,4.0,2.8,Content Creation,Medium,9,26,5.8,0.5,Low,92
+116,27,36-45,Male,4.2,2.4,Problem Solving,High,3,26,6.6,0.4,Medium,91
+117,32,26-35,Female,3.2,1.2,Coding,High,10,26,6.9,0.0,Low,89
+118,28,36-45,Male,4.1,3.2,Problem Solving,Medium,7,20,6.1,0.4,Medium,93
+119,31,36-45,Male,6.2,1.4,Coding,High,9,20,5.5,0.3,High,78
+120,32,18-25,Female,5.6,3.5,Research,Low,8,22,7.3,1.0,Medium,94
+121,31,18-25,Female,3.1,1.7,Coding,High,9,23,5.6,0.3,Low,89
+122,24,26-35,Female,4.3,0.5,Learning,Low,3,10,6.2,0.2,Medium,82
+123,20,36-45,Male,7.0,3.3,Coding,Low,8,30,7.0,1.5,Medium,90
+124,27,26-35,Male,3.1,2.9,Coding,Low,7,16,5.9,0.7,Low,95
+125,29,26-35,Male,6.4,0.8,Research,Low,6,20,5.1,1.4,High,78
+126,29,26-35,Male,2.0,3.4,Learning,Low,3,28,7.7,0.9,Low,95
+127,34,36-45,Female,5.5,3.9,Coding,High,9,13,5.3,1.3,Medium,93
+128,22,18-25,Male,5.2,1.1,Research,High,9,12,7.6,0.6,Medium,85
+129,33,18-25,Female,7.3,2.0,Coding,High,5,27,5.0,2.0,High,82
+130,32,18-25,Male,2.4,2.9,Problem Solving,High,4,29,6.4,0.3,Low,95
+131,35,18-25,Female,7.7,1.5,Problem Solving,Low,6,13,6.4,1.8,Medium,81
+132,29,26-35,Female,4.1,3.7,Research,Medium,10,19,6.1,0.8,Medium,95
+133,22,26-35,Male,4.4,3.1,Problem Solving,Medium,7,18,5.9,1.6,Medium,95
+134,20,36-45,Female,7.8,2.8,Content Creation,Low,8,19,5.3,1.0,High,81
+135,30,26-35,Male,6.9,2.8,Learning,Low,8,22,6.4,1.2,Medium,86
+136,35,36-45,Female,2.2,1.8,Learning,High,6,29,7.3,1.5,Low,95
+137,24,18-25,Female,3.1,1.5,Learning,Low,3,12,7.4,0.2,Low,92
+138,35,26-35,Female,6.0,1.7,Coding,Low,6,21,6.9,2.0,Medium,88
+139,24,36-45,Male,2.0,2.0,Content Creation,Low,5,19,5.4,0.3,Low,93
+140,29,36-45,Female,2.2,2.9,Research,Low,9,20,7.3,0.6,Low,95
+141,20,18-25,Female,5.7,0.9,Learning,High,7,15,5.6,1.4,Medium,81
+142,24,26-35,Female,7.0,2.9,Content Creation,Low,4,23,7.4,0.9,Medium,88
+143,22,26-35,Female,7.8,0.8,Content Creation,Medium,7,30,6.3,0.8,Medium,74
+144,23,36-45,Male,2.5,3.5,Problem Solving,Medium,3,27,6.3,0.6,Low,95
+145,25,26-35,Female,2.5,3.8,Problem Solving,High,10,11,6.6,1.3,Low,95
+146,26,18-25,Female,4.9,1.4,Learning,Low,6,13,7.1,0.6,Medium,86
+147,23,26-35,Male,4.8,3.3,Research,High,6,18,6.8,0.6,Medium,94
+148,21,18-25,Male,5.8,1.1,Problem Solving,Medium,6,27,7.8,0.7,Medium,84
+149,20,36-45,Female,3.7,2.5,Research,Low,3,28,7.4,1.9,Low,95
+150,35,18-25,Female,2.2,3.1,Research,Low,5,12,6.5,1.7,Low,95
+151,32,36-45,Female,5.6,3.3,Learning,High,5,21,7.5,0.1,Medium,91
+152,23,18-25,Male,2.4,2.5,Coding,Low,10,29,5.1,1.2,Low,95
+153,18,36-45,Female,6.8,2.9,Problem Solving,Low,8,22,7.6,0.5,Medium,87
+154,24,36-45,Female,5.2,1.4,Research,Low,7,10,5.4,0.8,Medium,83
+155,18,18-25,Female,7.0,2.7,Research,Medium,6,28,7.8,0.6,Medium,87
+156,34,36-45,Male,6.1,1.9,Research,Medium,6,15,7.9,0.5,Medium,86
+157,23,26-35,Female,5.1,2.1,Research,Medium,9,11,7.5,0.9,Medium,90
+158,23,18-25,Male,7.8,1.2,Problem Solving,Low,8,28,5.0,0.3,High,72
+159,20,18-25,Male,7.7,2.8,Learning,Medium,7,22,5.3,1.9,High,84
+160,23,18-25,Male,7.8,1.7,Problem Solving,Medium,3,22,7.4,0.5,Medium,79
+161,21,26-35,Female,2.4,1.1,Content Creation,Low,3,15,7.4,1.2,Low,95
+162,35,18-25,Female,5.1,1.7,Learning,High,6,16,7.5,1.4,Medium,90
+163,27,26-35,Female,3.4,3.3,Learning,Medium,9,20,6.7,1.7,Low,95
+164,19,26-35,Male,7.2,3.1,Research,High,6,23,7.5,1.7,Medium,90
+165,28,36-45,Female,2.1,3.3,Research,High,5,20,7.4,1.9,Low,95
+166,24,26-35,Female,2.4,0.8,Coding,High,4,22,5.8,1.4,Low,91
+167,30,18-25,Female,3.3,2.3,Content Creation,Medium,3,17,6.2,1.5,Low,95
+168,30,26-35,Female,6.5,1.5,Content Creation,Low,7,18,6.4,1.0,Medium,82
+169,21,36-45,Male,5.5,1.0,Content Creation,Low,10,16,7.4,0.9,Medium,85
+170,33,26-35,Male,3.3,3.7,Content Creation,Medium,9,30,5.2,1.8,Low,95
+171,35,18-25,Male,4.5,1.0,Problem Solving,High,5,27,6.2,0.7,Medium,85
+172,19,26-35,Male,6.0,2.7,Problem Solving,Low,6,16,5.2,1.3,Medium,87
+173,19,26-35,Male,3.8,0.7,Coding,Medium,8,23,7.1,1.2,Low,89
+174,26,36-45,Male,2.0,0.6,Coding,High,10,17,6.0,1.0,Low,91
+175,30,26-35,Male,7.6,3.7,Learning,High,8,20,5.8,0.3,High,84
+176,28,18-25,Male,7.0,2.4,Coding,Medium,6,20,5.1,1.4,High,83
+177,35,18-25,Female,7.1,4.0,Content Creation,Medium,10,22,6.5,0.5,Medium,89
+178,26,18-25,Female,4.4,3.9,Learning,Low,7,20,6.5,1.3,Medium,95
+179,27,26-35,Female,7.4,2.4,Problem Solving,Low,4,14,5.5,1.0,High,81
+180,33,36-45,Male,3.1,3.3,Coding,Low,8,27,5.1,1.5,Low,95
+181,30,26-35,Male,6.1,2.6,Content Creation,Low,3,18,6.0,0.3,Medium,85
+182,30,26-35,Male,2.1,2.7,Coding,Medium,5,24,6.6,1.3,Low,95
+183,20,26-35,Female,3.9,4.0,Coding,High,9,11,5.9,1.7,Low,95
+184,32,18-25,Male,3.7,3.0,Problem Solving,High,9,29,7.3,0.2,Low,95
+185,30,36-45,Male,7.8,3.6,Research,Low,4,26,7.4,0.6,Medium,87
+186,18,18-25,Male,4.7,3.1,Learning,Low,5,15,5.5,0.1,Medium,89
+187,34,18-25,Female,2.7,3.9,Problem Solving,Low,10,18,7.9,0.4,Low,95
+188,18,36-45,Female,2.3,3.2,Content Creation,Medium,4,11,7.8,0.7,Low,95
+189,23,18-25,Female,3.7,1.5,Coding,Medium,5,27,7.9,1.6,Low,95
+190,33,18-25,Female,6.2,0.7,Problem Solving,Medium,10,12,5.9,0.0,High,76
+191,26,36-45,Female,2.9,0.8,Learning,Medium,7,30,6.4,0.6,Low,89
+192,31,36-45,Male,2.4,2.6,Coding,Low,7,20,5.5,1.3,Low,95
+193,19,36-45,Female,7.0,3.0,Coding,Medium,3,26,5.3,1.8,High,87
+194,27,36-45,Male,4.6,3.3,Problem Solving,Low,7,14,5.1,0.0,Medium,89
+195,20,18-25,Female,6.6,0.8,Content Creation,Low,5,28,7.0,0.4,Medium,78
+196,22,36-45,Male,5.0,3.6,Content Creation,Medium,4,10,5.9,1.0,Medium,94
+197,35,36-45,Male,5.3,0.5,Learning,High,7,13,7.2,0.1,Medium,80
+198,23,18-25,Female,2.0,2.8,Content Creation,Medium,8,26,6.6,1.3,Low,95
+199,24,18-25,Female,2.9,3.8,Research,Low,3,21,5.9,1.1,Low,95
+200,18,18-25,Female,7.1,3.5,Learning,Low,10,25,5.4,0.9,High,86
+201,24,36-45,Female,7.5,3.4,Problem Solving,Low,6,14,7.2,1.9,Medium,91
+202,35,26-35,Male,4.5,2.2,Learning,Low,4,29,6.8,0.8,Medium,91
+203,29,18-25,Female,3.1,3.4,Coding,Medium,4,19,7.4,0.8,Low,95
+204,25,18-25,Female,3.1,1.7,Learning,Low,6,22,5.4,1.9,Low,94
+205,27,26-35,Male,3.9,1.6,Content Creation,Medium,7,27,6.4,0.6,Low,89
+206,35,26-35,Male,6.9,1.7,Content Creation,Low,10,12,5.5,1.7,High,82
+207,26,18-25,Male,7.6,2.0,Coding,High,3,24,7.1,1.5,Medium,83
+208,33,26-35,Male,2.9,1.8,Coding,Medium,10,11,6.4,0.8,Low,93
+209,20,36-45,Male,7.8,2.0,Problem Solving,High,9,19,7.3,0.9,Medium,81
+210,22,36-45,Female,6.1,3.1,Coding,Low,7,11,7.4,0.4,Medium,90
+211,19,18-25,Female,5.6,2.4,Learning,High,5,16,6.4,1.4,Medium,89
+212,19,26-35,Male,6.2,3.6,Learning,High,9,18,5.2,1.5,High,90
+213,23,26-35,Female,5.6,2.6,Content Creation,Medium,8,11,6.4,1.3,Medium,90
+214,28,26-35,Male,2.4,3.0,Learning,Medium,10,29,5.4,1.2,Low,95
+215,30,18-25,Male,5.9,2.8,Research,Medium,3,26,7.8,1.3,Medium,93
+216,18,18-25,Male,7.8,2.6,Coding,Low,5,21,7.4,1.7,Medium,86
+217,19,18-25,Female,7.6,0.7,Learning,High,8,20,5.3,0.0,High,70
+218,22,26-35,Male,6.1,3.5,Content Creation,Low,9,21,7.3,1.9,Medium,95
+219,30,18-25,Female,3.3,2.2,Problem Solving,Low,8,28,5.2,1.2,Low,92
+220,32,26-35,Male,5.3,1.2,Coding,High,7,16,5.9,2.0,Medium,86
+221,29,36-45,Male,3.5,3.6,Content Creation,High,8,22,6.0,0.5,Low,95
+222,34,18-25,Female,6.7,1.2,Problem Solving,Low,8,19,6.7,1.9,Medium,83
+223,21,26-35,Male,4.6,1.7,Learning,High,3,15,5.6,0.2,Medium,84
+224,30,26-35,Male,6.8,2.2,Coding,High,10,16,5.6,1.6,High,84
+225,31,36-45,Male,3.7,3.1,Research,Low,8,25,7.9,0.9,Low,95
+226,21,36-45,Female,5.5,0.5,Learning,Low,5,20,6.3,0.9,Medium,80
+227,28,18-25,Male,2.3,2.3,Content Creation,Low,5,17,5.6,1.8,Low,95
+228,25,18-25,Male,4.5,3.8,Coding,High,5,17,6.0,0.6,Medium,95
+229,35,36-45,Male,3.7,3.9,Content Creation,High,3,15,6.5,1.7,Low,95
+230,21,36-45,Male,6.1,0.8,Content Creation,Medium,10,17,6.9,1.0,Medium,81
+231,32,26-35,Female,2.3,3.3,Problem Solving,Low,9,22,7.2,1.3,Low,95
+232,20,36-45,Female,4.8,0.7,Research,Medium,5,25,5.3,0.4,Medium,80
+233,31,18-25,Male,4.7,1.7,Research,Medium,4,26,7.1,0.4,Medium,88
+234,31,18-25,Male,3.6,3.1,Content Creation,Medium,3,23,5.2,1.4,Low,95
+235,34,26-35,Female,3.5,2.0,Problem Solving,Low,4,16,5.6,1.1,Low,92
+236,21,18-25,Female,6.9,3.1,Problem Solving,High,5,18,7.2,0.6,Medium,87
+237,19,18-25,Male,7.5,1.3,Problem Solving,Low,10,29,7.2,0.6,Medium,78
+238,35,18-25,Male,2.0,1.0,Coding,Low,9,24,6.1,1.6,Low,95
+239,30,18-25,Female,5.2,1.9,Problem Solving,High,9,20,7.8,1.4,Medium,91
+240,27,18-25,Female,5.3,3.8,Learning,Low,9,13,5.7,1.7,Medium,95
+241,30,18-25,Female,2.2,3.7,Content Creation,Low,4,27,7.4,1.0,Low,95
+242,29,36-45,Female,3.8,2.4,Learning,Medium,5,23,5.3,1.1,Low,92
+243,34,36-45,Female,7.5,1.7,Coding,Medium,8,22,6.8,1.1,Medium,81
+244,34,26-35,Male,2.1,1.5,Learning,Medium,3,19,7.4,0.5,Low,95
+245,26,18-25,Female,5.4,1.8,Learning,High,10,20,5.2,0.3,Medium,82
+246,29,36-45,Female,3.6,3.3,Problem Solving,High,3,18,5.2,1.6,Low,95
+247,32,26-35,Male,7.3,1.4,Problem Solving,Medium,9,26,7.8,1.6,Medium,84
+248,25,18-25,Female,7.2,0.7,Content Creation,Low,5,19,7.6,1.3,Medium,80
+249,27,18-25,Male,7.6,2.0,Problem Solving,Medium,5,30,5.2,0.4,High,76
+250,23,26-35,Female,6.0,1.0,Learning,Low,7,24,7.7,1.6,Medium,86
+251,24,26-35,Male,6.7,1.3,Problem Solving,Medium,6,10,5.0,1.3,High,79
+252,26,18-25,Male,4.8,0.7,Problem Solving,Low,3,29,5.9,1.4,Medium,84
+253,30,18-25,Male,4.8,3.6,Learning,Medium,7,22,5.3,1.6,Medium,95
+254,27,18-25,Female,7.8,1.3,Content Creation,High,5,13,6.0,1.9,Medium,79
+255,29,26-35,Female,2.3,0.7,Content Creation,High,5,28,7.1,1.9,Low,95
+256,21,18-25,Female,4.2,1.1,Coding,Low,5,30,5.1,0.2,Medium,82
+257,30,36-45,Male,2.9,1.9,Coding,High,8,21,7.2,0.2,Low,93
+258,25,18-25,Female,3.5,1.0,Content Creation,Medium,6,28,7.5,0.6,Low,90
+259,19,36-45,Male,4.3,3.5,Coding,Medium,9,16,7.0,1.2,Medium,95
+260,26,36-45,Female,6.8,2.5,Problem Solving,Medium,9,16,7.2,1.6,Medium,88
+261,30,18-25,Female,3.1,1.3,Content Creation,High,6,20,7.4,0.1,Low,91
+262,24,18-25,Female,2.5,1.7,Problem Solving,High,7,18,6.9,0.1,Low,93
+263,31,26-35,Female,5.6,1.1,Coding,High,7,14,7.1,1.0,Medium,84
+264,19,18-25,Female,5.0,2.8,Coding,Low,7,17,5.6,1.2,Medium,91
+265,27,36-45,Male,8.0,0.5,Coding,Medium,5,30,5.2,0.6,High,70
+266,20,18-25,Female,3.0,1.5,Research,Medium,5,12,6.0,1.7,Low,94
+267,29,36-45,Male,5.9,1.6,Coding,Medium,4,30,5.9,0.8,Medium,82
+268,34,36-45,Female,3.1,3.1,Research,High,8,14,7.2,0.4,Low,95
+269,29,26-35,Male,2.3,3.1,Problem Solving,Low,9,25,6.0,1.3,Low,95
+270,19,36-45,Male,4.6,2.1,Problem Solving,High,7,14,5.3,1.4,Medium,89
+271,29,26-35,Male,7.1,1.4,Problem Solving,Medium,9,30,6.3,0.8,Medium,79
+272,26,36-45,Female,3.6,1.0,Learning,High,7,25,6.5,1.9,Low,91
+273,18,26-35,Male,5.8,1.6,Research,Medium,8,18,5.2,1.7,Medium,84
+274,25,36-45,Female,3.7,2.5,Content Creation,Low,5,18,6.3,1.0,Low,94
+275,32,26-35,Female,5.1,1.2,Problem Solving,High,9,28,5.6,0.4,Medium,81
+276,22,26-35,Female,5.8,3.1,Learning,High,8,17,7.9,2.0,Medium,95
+277,31,18-25,Male,4.2,3.1,Problem Solving,Low,6,30,6.6,0.5,Medium,94
+278,27,26-35,Female,2.4,3.0,Coding,Medium,6,11,5.1,0.0,Low,95
+279,35,36-45,Male,4.3,1.2,Learning,High,4,21,7.1,0.3,Medium,87
+280,21,18-25,Male,3.5,1.2,Research,Medium,5,17,5.5,0.9,Low,88
+281,20,36-45,Male,6.5,1.8,Learning,Low,8,17,6.6,1.9,Medium,86
+282,27,36-45,Female,2.3,3.4,Problem Solving,High,7,24,7.4,1.8,Low,95
+283,20,36-45,Female,4.4,3.5,Learning,Medium,10,19,5.4,0.1,Medium,91
+284,18,26-35,Female,7.6,0.9,Learning,Medium,10,10,7.7,0.7,Medium,78
+285,24,36-45,Male,3.2,2.7,Coding,Low,4,13,7.4,1.9,Low,95
+286,26,26-35,Male,6.2,0.5,Learning,Low,6,16,6.9,0.7,Medium,79
+287,22,26-35,Female,2.5,2.6,Coding,High,6,18,7.3,0.3,Low,95
+288,25,26-35,Female,2.9,0.7,Content Creation,Medium,6,19,6.8,0.4,Low,88
+289,27,26-35,Female,5.6,1.1,Content Creation,Low,8,25,6.7,0.5,Medium,82
+290,22,18-25,Female,7.4,1.4,Learning,Medium,8,19,7.7,0.4,Medium,80
+291,31,26-35,Female,2.3,1.0,Coding,Medium,8,28,5.0,1.2,Low,90
+292,18,36-45,Female,3.4,2.9,Problem Solving,Medium,3,15,6.1,0.1,Low,93
+293,32,36-45,Female,4.8,1.3,Coding,High,3,14,6.9,1.0,Medium,87
+294,31,26-35,Female,6.2,3.8,Learning,Medium,9,15,6.3,1.6,Medium,93
+295,33,18-25,Male,6.0,3.0,Content Creation,Medium,3,22,7.6,1.5,Medium,93
+296,33,36-45,Female,7.7,2.4,Problem Solving,Low,5,19,6.6,0.8,Medium,82
+297,25,26-35,Male,6.7,1.8,Content Creation,Low,8,21,7.1,0.9,Medium,84
+298,33,26-35,Female,6.6,1.7,Problem Solving,High,9,14,7.0,0.2,Medium,81
+299,28,26-35,Male,6.5,2.3,Problem Solving,Low,10,10,7.6,1.3,Medium,88
+300,19,36-45,Female,4.8,2.2,Content Creation,Medium,6,17,8.0,1.1,Medium,93
+301,18,36-45,Female,7.2,0.7,Coding,High,4,30,5.8,0.6,High,74
+302,18,36-45,Female,7.7,2.0,Learning,High,6,18,6.6,1.5,Medium,82
+303,31,26-35,Female,5.2,2.4,Content Creation,Medium,3,26,7.6,0.2,Medium,89
+304,35,18-25,Female,7.9,0.6,Content Creation,Low,5,26,5.4,0.7,High,71
+305,32,18-25,Male,6.5,1.1,Learning,Medium,8,15,5.5,0.3,High,76
+306,34,26-35,Female,3.7,2.9,Research,High,4,27,7.0,0.1,Low,94
+307,31,18-25,Male,7.2,0.8,Content Creation,Low,9,13,5.4,0.9,High,75
+308,18,36-45,Female,5.4,1.2,Learning,Medium,10,27,5.4,0.1,Medium,79
+309,23,36-45,Female,4.6,2.8,Research,High,4,30,5.8,0.1,Medium,89
+310,33,36-45,Female,7.9,1.1,Learning,Medium,3,16,5.0,1.6,High,75
+311,21,26-35,Female,3.1,3.1,Problem Solving,Low,5,19,5.5,0.3,Low,95
+312,27,36-45,Male,7.8,3.7,Content Creation,High,6,17,5.5,1.2,High,86
+313,28,18-25,Female,6.1,2.5,Coding,Medium,3,27,6.7,1.5,Medium,89
+314,20,18-25,Male,5.9,1.3,Content Creation,Medium,3,26,7.9,0.8,Medium,85
+315,24,26-35,Male,5.8,0.8,Content Creation,Low,4,25,6.1,0.5,Medium,79
+316,22,36-45,Male,4.5,1.7,Content Creation,Medium,6,26,6.9,1.7,Medium,92
+317,18,26-35,Female,6.5,0.5,Content Creation,High,8,17,6.6,0.7,Medium,77
+318,34,26-35,Male,5.8,1.1,Coding,Low,8,24,7.3,2.0,Medium,87
+319,21,36-45,Male,4.2,3.7,Coding,Low,4,21,6.5,1.3,Medium,95
+320,33,26-35,Female,4.7,3.0,Learning,Medium,8,17,6.8,1.6,Medium,95
+321,24,26-35,Male,3.3,3.6,Learning,High,3,29,7.8,0.6,Low,95
+322,19,26-35,Female,4.6,1.2,Problem Solving,Low,10,20,6.5,1.9,Medium,89
+323,19,36-45,Female,5.6,1.0,Coding,High,10,15,5.4,0.2,Medium,78
+324,23,18-25,Male,3.2,3.5,Content Creation,Low,10,28,7.8,1.3,Low,95
+325,24,36-45,Female,4.0,3.5,Learning,Medium,7,19,7.5,0.5,Low,95
+326,23,26-35,Female,6.6,2.0,Learning,Medium,8,22,7.1,1.0,Medium,85
+327,26,36-45,Male,3.4,2.5,Learning,High,4,19,5.6,1.0,Low,94
+328,33,18-25,Female,6.7,2.7,Coding,High,8,22,5.0,1.2,High,84
+329,29,26-35,Male,4.1,3.1,Learning,Medium,7,20,6.3,1.6,Medium,95
+330,30,36-45,Female,4.9,1.4,Learning,Medium,6,12,5.6,1.6,Medium,86
+331,29,18-25,Female,7.3,3.0,Research,Medium,9,21,6.0,1.0,Medium,85
+332,22,18-25,Male,4.9,2.7,Research,Low,5,11,6.5,1.9,Medium,94
+333,19,18-25,Female,4.7,3.9,Problem Solving,Medium,4,22,7.5,1.1,Medium,95
+334,20,26-35,Male,2.5,1.9,Coding,Low,5,23,7.8,2.0,Low,95
+335,23,26-35,Male,4.4,1.2,Coding,Medium,10,18,7.7,0.6,Medium,88
+336,19,18-25,Female,6.3,1.5,Coding,Low,5,14,7.4,0.4,Medium,83
+337,20,26-35,Male,4.5,1.5,Problem Solving,Low,4,12,5.9,1.5,Medium,88
+338,25,18-25,Male,2.6,3.9,Coding,Low,4,21,5.2,1.1,Low,95
+339,24,18-25,Female,6.8,3.8,Research,Medium,4,19,7.3,0.8,Medium,91
+340,34,26-35,Female,3.2,1.8,Content Creation,Low,9,17,7.3,0.2,Low,92
+341,28,26-35,Female,4.6,2.7,Research,Low,5,23,6.6,1.0,Medium,93
+342,21,18-25,Female,4.8,1.4,Content Creation,Low,5,22,5.5,1.7,Medium,87
+343,20,26-35,Female,2.4,1.7,Coding,Low,3,19,5.9,1.1,Low,94
+344,23,36-45,Female,3.5,2.8,Coding,Low,6,26,6.6,1.1,Low,95
+345,20,18-25,Male,2.3,2.5,Learning,High,7,27,5.5,0.4,Low,95
+346,26,18-25,Female,7.8,3.2,Learning,High,7,28,6.8,1.6,Medium,87
+347,20,36-45,Female,2.5,1.2,Coding,High,6,15,5.0,0.4,Low,88
+348,18,36-45,Male,6.7,3.5,Content Creation,Medium,3,14,6.2,0.3,Medium,87
+349,26,36-45,Male,4.7,3.0,Coding,High,4,21,7.0,0.4,Medium,93
+350,32,26-35,Male,7.0,1.0,Coding,Low,3,29,5.2,2.0,High,79
+351,33,26-35,Male,4.9,1.7,Learning,Low,8,17,6.1,1.4,Medium,88
+352,33,18-25,Female,3.2,1.0,Research,Medium,9,10,5.4,0.6,Low,87
+353,24,18-25,Male,3.2,3.9,Coding,Medium,5,17,5.7,1.5,Low,95
+354,24,26-35,Female,7.8,3.7,Research,High,5,13,5.1,0.6,High,83
+355,25,26-35,Female,4.7,1.3,Problem Solving,Low,5,11,6.8,1.0,Medium,87
+356,32,18-25,Male,7.2,2.1,Content Creation,High,8,11,7.5,1.5,Medium,86
+357,32,18-25,Female,2.6,1.3,Coding,High,5,30,8.0,0.4,Low,94
+358,22,26-35,Male,3.5,2.5,Problem Solving,High,5,25,6.6,1.6,Low,95
+359,31,18-25,Male,2.5,3.0,Learning,High,5,11,7.7,1.9,Low,95
+360,27,18-25,Female,2.2,0.7,Coding,Medium,4,30,5.2,1.1,Low,89
+361,30,18-25,Female,6.4,1.8,Coding,Low,9,25,7.4,0.3,Medium,83
+362,34,18-25,Female,6.6,0.6,Learning,Medium,7,20,5.0,0.7,High,74
+363,19,18-25,Male,6.2,3.9,Research,Medium,10,26,6.2,0.0,Medium,89
+364,32,36-45,Female,7.0,2.2,Problem Solving,High,9,29,6.2,0.5,Medium,81
+365,35,36-45,Female,5.6,1.4,Content Creation,High,8,16,5.6,1.0,Medium,83
+366,30,26-35,Male,4.3,2.6,Problem Solving,Medium,8,11,7.9,1.3,Medium,95
+367,28,18-25,Male,3.1,2.0,Coding,High,6,28,7.0,1.8,Low,95
+368,20,26-35,Female,3.3,1.3,Problem Solving,Medium,7,13,7.1,1.2,Low,93
+369,35,26-35,Male,5.6,3.9,Research,Low,8,18,7.3,0.6,Medium,95
+370,24,26-35,Female,2.9,2.0,Research,High,7,25,5.7,0.1,Low,91
+371,30,36-45,Male,7.7,3.1,Coding,High,6,27,6.9,1.2,Medium,86
+372,26,36-45,Male,2.3,1.1,Learning,Medium,6,28,7.3,0.4,Low,93
+373,30,18-25,Female,6.5,2.0,Research,Medium,9,30,7.6,0.7,Medium,85
+374,31,26-35,Male,7.4,1.0,Coding,High,5,19,6.4,0.9,Medium,77
+375,21,26-35,Female,5.3,2.5,Problem Solving,Medium,4,17,7.2,1.6,Medium,93
+376,26,36-45,Female,4.2,2.8,Content Creation,High,9,20,6.8,0.4,Medium,93
+377,25,36-45,Male,3.6,3.8,Coding,Low,4,16,6.3,0.8,Low,95
+378,18,18-25,Female,6.2,2.6,Learning,High,4,19,5.1,0.5,High,83
+379,26,18-25,Male,6.8,3.7,Problem Solving,Low,5,26,7.4,1.4,Medium,93
+380,20,36-45,Male,6.2,0.7,Coding,Medium,3,24,7.8,1.9,Medium,85
+381,27,26-35,Male,7.9,1.5,Learning,Medium,8,12,5.5,1.5,High,77
+382,31,18-25,Male,7.9,2.9,Problem Solving,Medium,8,13,7.0,1.7,Medium,86
+383,20,36-45,Female,4.6,1.7,Content Creation,Low,5,23,7.8,1.3,Medium,92
+384,26,18-25,Male,3.2,1.3,Content Creation,Medium,6,14,7.3,1.3,Low,94
+385,34,26-35,Male,4.8,3.6,Coding,Medium,10,15,7.1,1.6,Medium,95
+386,19,36-45,Male,3.4,2.8,Coding,Medium,3,25,7.0,1.5,Low,95
+387,28,36-45,Female,4.0,3.7,Content Creation,Medium,8,28,6.9,0.3,Low,95
+388,22,18-25,Female,3.9,1.0,Research,High,10,21,6.1,1.9,Low,90
+389,23,36-45,Female,6.9,2.1,Problem Solving,Medium,10,19,6.3,0.5,Medium,81
+390,23,26-35,Female,6.8,1.0,Coding,High,3,12,6.1,1.1,Medium,79
+391,26,18-25,Female,4.2,4.0,Coding,Low,5,17,6.7,1.3,Medium,95
+392,20,26-35,Female,5.0,1.6,Learning,High,10,19,7.5,1.4,Medium,90
+393,24,36-45,Female,7.3,2.3,Problem Solving,Medium,7,25,7.7,1.5,Medium,87
+394,31,36-45,Male,2.4,2.4,Coding,High,7,19,6.1,1.6,Low,95
+395,31,26-35,Male,6.4,2.2,Research,High,7,26,7.8,0.8,Medium,87
+396,27,26-35,Male,6.6,2.0,Coding,High,5,26,5.4,1.4,High,83
+397,28,36-45,Female,6.5,1.8,Problem Solving,High,5,19,7.8,1.2,Medium,86
+398,19,36-45,Male,5.9,2.0,Problem Solving,Medium,8,15,7.5,1.1,Medium,88
+399,32,18-25,Male,2.1,3.8,Research,Medium,7,10,6.0,0.3,Low,95
+400,30,36-45,Female,5.1,0.5,Learning,High,9,28,5.3,1.9,Medium,83
+401,23,36-45,Female,6.7,3.0,Content Creation,High,6,30,6.7,0.3,Medium,86
+402,31,26-35,Female,6.9,3.2,Learning,High,4,26,5.1,0.4,High,83
+403,25,18-25,Female,3.0,2.2,Problem Solving,Medium,3,10,7.9,1.7,Low,95
+404,23,36-45,Male,4.1,1.6,Research,High,5,22,7.7,0.4,Medium,90
+405,35,36-45,Male,3.2,4.0,Problem Solving,Medium,7,18,6.2,1.2,Low,95
+406,33,18-25,Male,7.2,3.5,Problem Solving,High,6,30,7.6,0.1,Medium,87
+407,24,36-45,Female,4.8,3.4,Learning,Medium,5,16,7.5,0.5,Medium,95
+408,19,18-25,Male,4.2,3.6,Learning,High,5,13,6.8,1.9,Medium,95
+409,33,18-25,Female,6.5,3.1,Problem Solving,Low,9,25,5.1,0.8,High,85
+410,20,36-45,Male,6.7,3.0,Problem Solving,High,5,24,6.2,1.9,Medium,90
+411,27,36-45,Male,6.2,1.0,Problem Solving,Medium,3,22,7.0,0.9,Medium,82
+412,24,18-25,Female,3.3,3.1,Research,Low,3,27,7.5,0.9,Low,95
+413,23,18-25,Male,7.7,2.7,Learning,High,6,18,5.1,1.5,High,82
+414,35,36-45,Male,4.2,2.8,Coding,High,10,22,6.5,0.3,Medium,92
+415,32,18-25,Male,7.9,2.5,Problem Solving,High,9,16,5.2,0.8,High,79
+416,21,18-25,Male,2.6,1.2,Research,Low,3,26,5.8,0.1,Low,88
+417,27,36-45,Male,5.0,3.1,Problem Solving,Medium,5,27,5.8,0.6,Medium,90
+418,19,36-45,Female,6.5,1.8,Problem Solving,High,7,24,5.2,0.3,High,79
+419,29,36-45,Male,7.0,3.6,Problem Solving,High,4,22,7.5,1.5,Medium,92
+420,23,36-45,Female,6.1,3.7,Content Creation,Low,4,21,7.1,1.7,Medium,95
+421,20,26-35,Female,6.9,0.5,Coding,Low,10,26,5.4,1.8,High,77
+422,29,26-35,Male,6.6,1.7,Content Creation,Low,5,15,7.6,0.9,Medium,84
+423,24,26-35,Female,4.1,3.7,Research,High,5,24,5.9,0.9,Medium,95
+424,26,36-45,Male,7.7,3.3,Problem Solving,Medium,8,16,6.4,1.8,Medium,88
+425,21,36-45,Male,2.5,0.5,Research,High,5,26,7.7,0.9,Low,92
+426,28,18-25,Male,3.6,0.9,Learning,High,7,28,6.9,1.7,Low,91
+427,18,26-35,Female,6.5,1.8,Research,Medium,4,15,6.3,0.5,Medium,81
+428,33,18-25,Male,5.8,3.9,Learning,Low,9,26,7.7,1.4,Medium,95
+429,32,18-25,Male,4.2,2.3,Research,High,3,19,5.2,0.7,Medium,89
+430,24,18-25,Male,7.9,0.5,Coding,Medium,3,15,6.6,0.6,Medium,73
+431,34,18-25,Male,7.4,2.2,Content Creation,Medium,9,26,5.3,0.1,High,77
+432,20,18-25,Male,3.0,1.5,Learning,Low,5,26,5.3,1.9,Low,93
+433,30,26-35,Male,7.5,1.0,Research,Low,8,27,5.9,1.0,High,76
+434,19,36-45,Male,6.7,2.6,Coding,High,6,15,7.3,1.8,Medium,90
+435,20,18-25,Female,4.3,3.6,Problem Solving,Low,6,28,5.6,2.0,Medium,95
+436,21,36-45,Female,5.9,3.5,Coding,Medium,6,19,7.0,0.5,Medium,91
+437,31,36-45,Male,4.6,1.8,Learning,Medium,8,25,7.3,1.7,Medium,93
+438,21,18-25,Female,2.4,1.2,Learning,Medium,5,11,7.1,1.3,Low,95
+439,22,18-25,Female,4.9,1.6,Content Creation,High,4,17,6.1,0.5,Medium,85
+440,26,18-25,Female,5.3,3.8,Research,Medium,5,10,5.4,0.6,Medium,91
+441,25,18-25,Female,7.7,1.8,Problem Solving,High,10,25,5.9,1.1,High,79
+442,23,18-25,Female,5.8,2.0,Coding,Low,3,24,5.6,1.1,Medium,85
+443,25,26-35,Male,5.4,1.6,Content Creation,Low,5,25,7.5,0.2,Medium,85
+444,21,26-35,Female,6.7,3.1,Coding,Low,5,16,6.6,1.0,Medium,88
+445,23,18-25,Female,3.3,1.5,Content Creation,Low,7,18,7.3,1.6,Low,95
+446,18,18-25,Male,2.3,2.7,Content Creation,Low,10,22,6.2,1.8,Low,95
+447,18,26-35,Male,7.1,1.6,Problem Solving,High,9,14,5.4,1.6,High,80
+448,33,18-25,Male,5.3,1.0,Content Creation,Medium,5,26,5.3,1.3,Medium,82
+449,29,18-25,Male,5.0,0.6,Problem Solving,High,9,26,7.5,0.9,Medium,85
+450,22,36-45,Female,5.3,0.7,Problem Solving,Medium,10,11,5.9,1.8,Medium,84
+451,28,36-45,Female,3.8,0.9,Learning,Low,3,11,7.2,1.6,Low,91
+452,19,26-35,Female,7.6,3.5,Coding,Low,4,11,6.1,1.0,Medium,86
+453,31,18-25,Male,7.7,0.9,Problem Solving,Medium,9,26,7.4,0.6,Medium,77
+454,30,36-45,Male,6.6,0.7,Research,Low,10,10,5.7,1.0,High,77
+455,24,26-35,Female,4.3,2.0,Research,Low,6,23,7.2,2.0,Medium,95
+456,21,26-35,Male,7.6,0.5,Coding,High,4,13,5.8,0.6,High,72
+457,33,26-35,Female,5.5,1.8,Learning,Low,6,30,7.9,0.4,Medium,87
+458,32,36-45,Male,7.1,2.7,Research,Low,3,26,6.0,1.2,Medium,85
+459,21,36-45,Female,6.0,1.6,Research,High,6,20,5.0,1.8,Medium,83
+460,35,18-25,Female,7.5,1.6,Learning,High,6,13,6.3,0.1,Medium,76
+461,29,36-45,Male,7.2,1.5,Coding,High,6,16,6.6,0.5,Medium,79
+462,24,36-45,Male,4.9,1.7,Content Creation,Medium,5,14,7.7,1.2,Medium,91
+463,29,26-35,Female,3.3,2.1,Content Creation,High,7,25,5.6,1.6,Low,94
+464,26,36-45,Female,6.0,3.3,Problem Solving,High,3,22,6.9,1.6,Medium,93
+465,20,26-35,Male,2.9,0.8,Research,Medium,7,10,6.3,1.8,Low,92
+466,31,18-25,Male,2.4,1.0,Problem Solving,High,9,20,7.3,0.5,Low,92
+467,26,26-35,Male,7.2,3.7,Coding,Low,5,24,7.4,1.3,Medium,91
+468,32,36-45,Male,5.6,0.8,Learning,High,3,30,6.9,2.0,Medium,86
+469,20,18-25,Male,4.0,2.7,Learning,Medium,3,22,6.9,1.2,Low,95
+470,33,36-45,Male,4.5,2.2,Learning,High,4,22,7.5,0.9,Medium,93
+471,21,18-25,Female,5.3,0.6,Research,High,9,13,6.4,1.4,Medium,83
+472,18,36-45,Male,4.3,1.5,Content Creation,Low,4,10,5.4,1.8,Medium,89
+473,27,26-35,Female,4.4,3.3,Research,Medium,4,25,5.5,0.3,Medium,91
+474,20,18-25,Male,2.4,3.2,Content Creation,Low,5,23,5.7,0.7,Low,95
+475,27,36-45,Female,4.3,3.6,Content Creation,High,7,30,5.9,0.3,Medium,94
+476,33,26-35,Female,5.9,3.0,Content Creation,Low,9,11,7.1,1.8,Medium,93
+477,34,26-35,Female,3.9,1.2,Research,High,7,26,7.0,0.1,Low,87
+478,27,18-25,Female,2.1,3.7,Learning,Low,10,23,5.9,1.6,Low,95
+479,24,26-35,Male,5.6,2.7,Coding,High,8,30,7.4,0.8,Medium,91
+480,19,18-25,Female,7.2,0.6,Research,High,8,12,5.7,1.5,High,76
+481,18,26-35,Male,5.7,2.5,Research,Medium,9,14,6.8,1.6,Medium,91
+482,26,36-45,Male,5.5,3.9,Research,Medium,9,13,5.9,0.6,Medium,92
+483,24,26-35,Female,3.8,2.4,Problem Solving,Low,8,16,6.0,0.3,Low,91
+484,32,18-25,Female,4.1,2.9,Content Creation,Low,9,19,5.5,1.7,Medium,95
+485,30,26-35,Male,4.0,1.6,Problem Solving,Medium,5,12,5.6,0.5,Low,87
+486,29,26-35,Female,2.9,1.8,Content Creation,Medium,6,22,5.1,0.3,Low,89
+487,34,36-45,Male,4.0,3.4,Content Creation,Medium,10,21,6.5,1.0,Low,95
+488,21,26-35,Male,6.4,1.9,Learning,Low,8,24,6.8,1.9,Medium,87
+489,31,26-35,Female,3.0,1.3,Content Creation,Medium,7,11,6.2,0.2,Low,89
+490,26,18-25,Male,2.7,3.7,Learning,High,4,26,6.3,1.6,Low,95
+491,28,26-35,Female,2.6,2.5,Problem Solving,Medium,10,13,7.4,1.2,Low,95
+492,20,26-35,Male,4.7,3.7,Learning,Medium,4,12,5.7,0.5,Medium,93
+493,27,36-45,Female,7.5,2.8,Problem Solving,Medium,4,29,7.0,0.3,Medium,83
+494,20,18-25,Male,3.2,2.7,Learning,Medium,7,20,6.3,1.4,Low,95
+495,27,36-45,Male,4.6,3.1,Research,Low,3,20,7.0,1.2,Medium,95
+496,23,26-35,Female,5.4,2.2,Problem Solving,Medium,8,11,5.5,0.0,Medium,83
+497,26,36-45,Female,7.6,3.2,Research,Low,7,21,7.7,0.2,Medium,86
+498,18,18-25,Male,4.3,3.3,Coding,High,5,26,5.7,0.2,Medium,92
+499,35,26-35,Female,3.0,0.6,Problem Solving,Low,5,19,6.5,0.8,Low,88
+500,32,36-45,Female,3.4,1.2,Problem Solving,Low,4,28,7.2,1.1,Low,92
