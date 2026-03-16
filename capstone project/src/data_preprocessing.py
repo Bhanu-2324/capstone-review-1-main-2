@@ -1,26 +1,17 @@
 import pandas as pd
-import os
 from sklearn.preprocessing import LabelEncoder
 
 GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1y_UlIjIqQvBfugews-9RstOPkZD4BVfIeOaX2aapKZc/export?format=csv"
 
 def load_and_preprocess():
-    # -----------------------------------------
+
     # Load LIVE data from Google Forms
-    # -----------------------------------------
     df = pd.read_csv(GOOGLE_SHEET_CSV_URL)
 
-    # Save snapshot (optional but professional)
-    df.to_csv("../data/latest_form_data.csv", index=False)
-
-    # -----------------------------------------
-    # Ensure Age is numeric (VERY IMPORTANT)
-    # -----------------------------------------
+    # Ensure Age is numeric
     df["Age"] = pd.to_numeric(df["Age"], errors="coerce")
 
-    # -----------------------------------------
-    # Derive Mental Health Impact (Rule-Based)
-    # -----------------------------------------
+    # Derive Mental Health Impact
     def mental_health(row):
         if row["StressLevel"] == "High" and row["SleepHours"] < 6:
             return "Poor"
@@ -31,16 +22,14 @@ def load_and_preprocess():
 
     df["MentalHealthImpact"] = df.apply(mental_health, axis=1)
 
-    # -----------------------------------------
-    # Encode ONLY non-age categorical columns
-    # -----------------------------------------
+    # Encode categorical columns
     le = LabelEncoder()
 
     categorical_cols = [
         "Gender",
         "Primary_AI_Use",
         "Reliance_On_AI_For_Learning",
-        "StressLevel"  # required for ML
+        "StressLevel"
     ]
 
     for col in categorical_cols:
