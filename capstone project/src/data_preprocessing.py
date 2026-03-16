@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from sklearn.preprocessing import LabelEncoder
 
 GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1y_UlIjIqQvBfugews-9RstOPkZD4BVfIeOaX2aapKZc/export?format=csv"
