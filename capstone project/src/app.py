@@ -35,17 +35,46 @@ df = load_and_preprocess()
 
 import pandas as pd
 
+# st.subheader("Age Group Filter")
+
+# age_min, age_max = st.slider(
+#     "Select Age Range",
+#     min_value=int(df["Age"].min()),
+#     max_value=int(df["Age"].max()),
+#     value=(18, 35)
+# )
+
+# filtered_df = df[(df["Age"] >= age_min) & (df["Age"] <= age_max)]
+
+# replaced with this :
+
+# --------------------------------------------------
+# Age Filter (Safe Version)
+# --------------------------------------------------
 st.subheader("Age Group Filter")
 
+# Clean Age column safely
+df["Age"] = pd.to_numeric(df["Age"], errors="coerce")
+df = df.dropna(subset=["Age"])
+df["Age"] = df["Age"].astype(int)
+
+# Safe min/max values
+age_min_value = int(df["Age"].min()) if not df.empty else 18
+age_max_value = int(df["Age"].max()) if not df.empty else 40
+
+# Slider
 age_min, age_max = st.slider(
     "Select Age Range",
-    min_value=int(df["Age"].min()),
-    max_value=int(df["Age"].max()),
-    value=(18, 35)
+    min_value=age_min_value,
+    max_value=age_max_value,
+    value=(age_min_value, age_max_value)
 )
 
-filtered_df = df[(df["Age"] >= age_min) & (df["Age"] <= age_max)]
-
+# Filter data
+filtered_df = df[
+    (df["Age"] >= age_min) &
+    (df["Age"] <= age_max)
+]
 
 # --------------------------------------------------
 # Dataset Overview
