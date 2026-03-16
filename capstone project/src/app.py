@@ -212,24 +212,40 @@ stress_map = {
 df["StressLevel_Num"] = df["StressLevel"].map(stress_map)
 
 # Select numeric columns only
-ml_df = df.select_dtypes(include=["int64", "float64"])
+# Use filtered data instead of full dataset
+ml_df = filtered_df.select_dtypes(include=["int64", "float64"])
+
+# Remove missing values
+ml_df = ml_df.dropna()
 
 # Target
 y = ml_df["StressLevel_Num"]
 
-# Features (remove target + leakage)
+# Features
 X = ml_df.drop(
     columns=["StressLevel_Num", "ProductivityScore"],
     errors="ignore"
 )
 
-# Train model
-model = RandomForestClassifier(
-    n_estimators=100,
-    random_state=42
-)
+# Train model ONLY if data exists
+if len(X) > 0 and len(y) > 0:
 
-model.fit(X, y)
+    model = RandomForestClassifier(
+        n_estimators=100,
+        random_state=42
+    )
+
+    model.fit(X, y)
+
+    fig1, ax1 = plt.subplots(figsize=(4.5, 3))
+    ax1.barh(X.columns, model.feature_importances_)
+    ax1.set_xlabel("Importance", fontsize=8)
+    ax1.set_title("Key Stress Factors", fontsize=9)
+
+    st.pyplot(fig1)
+
+else:
+    st.warning("Not enough data to train the model for the selected age range.")
 
 # X = df.drop(["StressLevel", "MentalHealthImpact"], axis=1)
 # y = df["StressLevel"]
