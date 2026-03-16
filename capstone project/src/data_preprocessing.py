@@ -5,13 +5,10 @@ GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1y_UlIjIqQvBfugew
 
 def load_and_preprocess():
 
-    # Load LIVE data from Google Forms
     df = pd.read_csv(GOOGLE_SHEET_CSV_URL)
 
-    # Ensure Age is numeric
     df["Age"] = pd.to_numeric(df["Age"], errors="coerce")
 
-    # Derive Mental Health Impact
     def mental_health(row):
         if row["StressLevel"] == "High" and row["SleepHours"] < 6:
             return "Poor"
@@ -22,7 +19,6 @@ def load_and_preprocess():
 
     df["MentalHealthImpact"] = df.apply(mental_health, axis=1)
 
-    # Encode categorical columns
     le = LabelEncoder()
 
     categorical_cols = [
@@ -34,5 +30,8 @@ def load_and_preprocess():
 
     for col in categorical_cols:
         df[col] = le.fit_transform(df[col])
+
+    # ✅ Remove rows with missing values
+    df = df.dropna()
 
     return df
