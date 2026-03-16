@@ -10,6 +10,9 @@ def load_and_preprocess():
     # -----------------------------------------
     df = pd.read_csv(GOOGLE_SHEET_CSV_URL)
 
+    # Clean column spaces
+    df.columns = df.columns.str.strip()
+
     # -----------------------------------------
     # Clean Age column
     # -----------------------------------------
@@ -18,7 +21,7 @@ def load_and_preprocess():
     df["Age"] = df["Age"].astype(int)
 
     # -----------------------------------------
-    # Derive Mental Health Impact
+    # Mental Health Impact Feature
     # -----------------------------------------
     def mental_health(row):
         if row["StressLevel"] == "High" and row["SleepHours"] < 6:
@@ -31,22 +34,22 @@ def load_and_preprocess():
     df["MentalHealthImpact"] = df.apply(mental_health, axis=1)
 
     # -----------------------------------------
-    # Encode categorical columns
+    # Encode ONLY other categorical columns
     # -----------------------------------------
     le = LabelEncoder()
 
     categorical_cols = [
         "Gender",
         "Primary_AI_Use",
-        "Reliance_On_AI_For_Learning",
-        "StressLevel"
+        "Reliance_On_AI_For_Learning"
     ]
 
     for col in categorical_cols:
-        df[col] = le.fit_transform(df[col].astype(str))
+        if col in df.columns:
+            df[col] = le.fit_transform(df[col].astype(str))
 
     # -----------------------------------------
-    # Remove remaining missing values
+    # Drop missing values
     # -----------------------------------------
     df = df.dropna()
 
